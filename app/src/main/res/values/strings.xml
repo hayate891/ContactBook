@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+    <string name="name_prompt">Please Enter the Name of Your Contact</string>
+    <string name="phone_prompt">Please Enter the Phone Number of Your Contact</string>
+    <string name="email_prompt">Please Enter the E-mail of Your Contact</string>
+    <string name="add_button_text">Add Contact</string>
+    <string name="search_button_text">Search For Contact</string>
+    <string name="search_prompt">Who\'s information would you like to see?</string>
+</resources>
