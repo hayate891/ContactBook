@@ -35,13 +35,15 @@
         android:ems="10"
         android:id="@+id/edtxtPhone"
         android:hint="@string/phone_prompt"
-        android:textSize="@dimen/contact_prompt_size"
+        android:textSize="14sp"
         android:layout_marginTop="18dp"
         android:layout_below="@+id/edtxtName"
+        android:width="400sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:gravity="center_horizontal" />
 
     <EditText
         android:layout_width="wrap_content"
