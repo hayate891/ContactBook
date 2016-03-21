@@ -37,6 +37,7 @@ public class SearchForContact extends AppCompatActivity {
 
         Contact[] contacts = new Contact[interim.length];
 
+        //creates Contact objects from Parcelable objects
         for(int i = 0; i < contacts.length; i++){
             contacts[i] = (Contact) interim[i];
         }
@@ -47,8 +48,11 @@ public class SearchForContact extends AppCompatActivity {
             txtvwContactInfo.setText("You must enter a name to search for a contact!");
         } else {
 
+            //iterates through array to search for a specific contact's name
             for(int j = 0; j < contacts.length; j++){
 
+                //first must check that the element at j is actually a Contact objact
+                //and then tests String equivalence
                 if(contacts[j] != null && nameToSearch.equals(contacts[j].getName())){
                     contactInfo += String.format("The contact information for %s is:\nPhone: " +
                             "%s\nE-mail: %s\n\n", contacts[j].getName(), contacts[j].getPhone(),
@@ -57,6 +61,7 @@ public class SearchForContact extends AppCompatActivity {
 
             }
 
+            //displays the info of the searched Contact
             txtvwContactInfo.setText(contactInfo);
 
         }

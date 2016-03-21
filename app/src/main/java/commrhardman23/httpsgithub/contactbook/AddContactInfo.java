@@ -49,13 +49,17 @@ public class AddContactInfo extends AppCompatActivity {
 
             if(numContactsAdded < contactsArray.length) {
 
+                //creates a new Contact object to be added to the array
                 contactToAdd = new Contact(edtxtName.getText().toString(),
                         edtxtPhone.getText().toString(), edtxtEmail.getText().toString());
 
+                //adds the Contact to the array at the current index
                 contactsArray[numContactsAdded] = contactToAdd;
 
+                //increases the current index
                 numContactsAdded++;
 
+                //clears the Contact's information
                 edtxtName.setText("");
                 edtxtPhone.setText("");
                 edtxtEmail.setText("");
